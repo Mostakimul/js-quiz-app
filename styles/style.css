@@ -1,3 +1,6 @@
+hrml {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
 }

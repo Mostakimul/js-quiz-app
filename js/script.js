@@ -24,6 +24,9 @@ form.addEventListener('submit', (e) => {
 
   // console.log(score);
 
+  // scroll top
+  scrollTo(0, 0);
+
   // showing the % within span
   result.querySelector('span').textContent = `${score}%`;
   // Removing d-none class
