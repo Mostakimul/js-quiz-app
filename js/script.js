@@ -27,8 +27,19 @@ form.addEventListener('submit', (e) => {
   // scroll top
   scrollTo(0, 0);
 
-  // showing the % within span
-  result.querySelector('span').textContent = `${score}%`;
   // Removing d-none class
   result.classList.remove('d-none');
+
+  // animating score
+  let output = 0;
+  const timer = setInterval(() => {
+    // showing the % within span
+    result.querySelector('span').textContent = `${output}%`;
+
+    if (output === score) {
+      clearInterval(timer);
+    } else {
+      output++;
+    }
+  }, 50);
 });
